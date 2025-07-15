@@ -9,6 +9,10 @@ services:
         fromDatabase:
           name: n8n-posgres
           property: connectionString
+      - key: WEBHOOK_URL
+        value: "https://n8n-c3sm.onrender.com"
+      - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
+        value: "true"
 
 databases:
   - name: n8n-posgres
